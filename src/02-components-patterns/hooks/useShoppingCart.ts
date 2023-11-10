@@ -9,9 +9,6 @@ export const useShoppingCart = () => {
         //console.log('onProductCountChange', count, product);
         setShoppinCart(oldShoppingCart => {
 
-            console.log(count);
-            
-
             if( count === 0 ) {
                 const { [product.id]: toDelete, ...rest } = oldShoppingCart;
                 return rest;
